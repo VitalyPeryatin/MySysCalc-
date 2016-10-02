@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		style="@style/Layouts"
+		android:orientation="horizontal">
+
+		<NumberPicker
+			style="@style/WrapContent"
+			android:id="@+id/numPickFrom"
+			android:background="#3FFBD8"
+			android:textColor="#FFFFFF"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="bottom">
+
+			<EditText
+				style="@style/Layouts"
+				android:id="@+id/textFrom"
+				android:layout_marginBottom="50dp"
+				android:background="#FFFFFF"
+				android:editable="false"
+				android:hint="0"
+				android:textColor="#636363"
+				android:typeface="serif"
+				android:textStyle="italic"
+				android:textSize="40sp"/>
+
+			<EditText
+				style="@style/Layouts"
+				android:id="@+id/textTo"
+				android:layout_gravity="bottom"
+				android:background="#FFFFFF"
+				android:editable="false"
+				android:textStyle="italic"
+				android:typeface="serif"
+				android:textColor="#696969"
+				android:textSize="25sp"/>
+
+		</LinearLayout>
+
+		<NumberPicker
+			style="@style/WrapContent"
+			android:id="@+id/numPickTo"
+			android:background="#3FFBD8"
+			android:textColor="#FFFFFF"/>
+
+	</LinearLayout>
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="bottom">
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="A"
+				android:id="@+id/btnA"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="B"
+				android:id="@+id/btnB"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="C"
+				android:id="@+id/btnC"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="/"
+				android:id="@+id/btnDevide"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="D"
+				android:id="@+id/btnD"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="E"
+				android:id="@+id/btnE"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="F"
+				android:id="@+id/btnF"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="*"
+				android:id="@+id/btnMultiply"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="7"
+				android:id="@+id/btn7"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="8"
+				android:id="@+id/btn8"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="9"
+				android:id="@+id/btn9"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="-"
+				android:id="@+id/btnMinus"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="4"
+				android:id="@+id/btn4"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="5"
+				android:id="@+id/btn5"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="6"
+				android:id="@+id/btn6"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="+"
+				android:id="@+id/btnPlus"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="1"
+				android:id="@+id/btn1"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="2"
+				android:id="@+id/btn2"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="3"
+				android:id="@+id/btn3"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="+/-"
+				android:id="@+id/btnChangeSigne"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_weight="1">
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="."
+				android:id="@+id/btnFraction"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="0"
+				android:id="@+id/btn0"/>
+
+			<Button
+				style="@style/SimpleButtons"
+				android:text="="
+				android:id="@+id/btnEqual"/>
+
+			<Button
+				style="@style/VIPButtons"
+				android:text="Del"
+				android:id="@+id/btnDelete"/>
+
+		</TableRow>
+
+	</TableLayout>
+
+</LinearLayout>
+

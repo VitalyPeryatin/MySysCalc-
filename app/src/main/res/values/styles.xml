@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:colorPrimaryDark">#00FF00</item>
+	</style>
+	<style name="WrapContent">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="Layouts">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="Buttons">
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:textSize">23sp</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:typeface">serif</item>
+	</style>
+	<style name="SimpleButtons" parent = "Buttons">
+		<item name="android:background">#434343</item>
+	</style>
+	<style name="VIPButtons" parent="Buttons">
+		<item name="android:background">#636363</item>
+	</style>
+</resources>
