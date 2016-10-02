@@ -5,19 +5,16 @@ import com.mycompany.coding2.*;
 public class ConverterSystem{
 	private String from = "";
 	public String to = "";
-	private int fromSys = 0;
-	private int toSys = 0;
+	private int degree, sum, fromSys = 0, toSys = 0, max = 1;
 	private int[] nums;
 	private char symbol;
-	private int degree, sum;
+	private boolean error = false;
 	
 	public ConverterSystem(String from, int fromSys, int toSys){
-	this.from = from;
-	this.fromSys = fromSys;
-	this.toSys = toSys;
- 
-	toOtherSystm(toTen());
-	
+		this.from = from;
+		this.fromSys = fromSys;
+		this.toSys = toSys;
+ 		toOtherSystem(toTen());
 	}
 
 	private int toTen(){
@@ -30,6 +27,11 @@ public class ConverterSystem{
 			nums[i] = symbol-55;
 		else
 			MainActivity.toast.show();
+		if(nums[i] > max)max=nums[i];
+		if(max>=fromSys){
+			error = true;
+			break;
+		}
 		
 	}
 	
@@ -40,11 +42,11 @@ public class ConverterSystem{
 	return sum;
 	}
 	
-	private void toOtherSystm(int ten){
-		int surplus=0;
-		char c = ' ';
-		StringBuilder newReverseNum = new StringBuilder("");
-		do{
+	private void toOtherSystem(int ten){
+		int surplus=0; // Остаток от деления
+		char c = ' '; // Один символ
+		StringBuilder newReverseNum = new StringBuilder(); 
+		do{  // 
 			surplus = ten%toSys;
 			if(surplus>9)
 				c = (char)(surplus+55);
@@ -54,6 +56,8 @@ public class ConverterSystem{
 			ten/=toSys;
 		}while(ten!=0);
 		newReverseNum.reverse();
-		to=newReverseNum.toString();
+		if(!error)
+			to=newReverseNum.toString();
+		else to="Ошибка!";
 	}
 }

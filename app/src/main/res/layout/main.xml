@@ -26,7 +26,7 @@
 			<EditText
 				style="@style/Layouts"
 				android:id="@+id/textFrom"
-				android:layout_marginBottom="50dp"
+				
 				android:background="#FFFFFF"
 				android:editable="false"
 				android:hint="0"

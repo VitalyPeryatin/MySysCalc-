@@ -39,8 +39,11 @@ public class MainActivity extends Activity implements OnClickListener, OnValueCh
 	public void onClick(View p1)
 	{
 		StringBuilder getText = new StringBuilder(textFrom.getText().toString());
-		if (getText.length() < 7)
+		if (getText.length() < 20)
 		{
+			
+			if(getText.length()<10)textFrom.setPadding(0, 0, 0, 50);
+			else if(getText.length()<20)textFrom.setPadding(0, 0, 0, 10);
 			switch (p1.getId())
 			{
 
