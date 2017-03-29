@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF"
+	android:weightSum="100">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="31"
+		android:orientation="vertical"
+		android:background="@android:color/white"
+		android:elevation="8dp">
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?android:attr/actionBarSize"
+			android:title=""
+			android:background="@android:color/white" />
+
+		<HorizontalScrollView
+			android:id="@+id/scrollingFrom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbarSize="0dp"
+			android:layout_marginRight="8dp"
+			android:animateLayoutChanges="false">
+
+			<com.mycompany.coding2.View.CustomViews.ThinTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/textFrom"
+				android:paddingRight="8dp"
+				android:background="#FFFFFF"
+				android:layout_gravity="end"
+				android:textStyle="bold"
+				android:textColor="#636363"
+				android:textSize="50sp"/>
+
+		</HorizontalScrollView>
+
+		<HorizontalScrollView
+			android:id="@+id/scrollingTo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="3"
+			android:scrollbarSize="0dp"
+			android:layout_marginRight="8dp"
+			android:animateLayoutChanges="false">
+			<com.mycompany.coding2.View.CustomViews.ThinTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/textTo"
+				android:paddingRight="8dp"
+				android:background="#FFFFFF"
+				android:layout_gravity="end"
+				android:textColor="#696969"
+				android:textSize="35sp" />
+		</HorizontalScrollView>
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="8"
+		android:background="@color/primaryColor"
+		android:orientation="horizontal"
+		android:elevation="4dp">
+
+		<Button
+			android:id="@+id/btnSolution"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/primaryColor"
+			android:textColor="@android:color/white"
+			android:text="Показать решение"
+			android:textSize="12sp"
+			android:gravity="center" />
+		</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="7"
+		android:gravity="center"
+		android:background="@color/primaryColor"
+		android:orientation="horizontal"
+		android:elevation="3dp">
+		<Spinner
+			android:id="@+id/spinner_from"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:layout_height="match_parent"
+			android:entries="@array/systems"/>
+
+		<ImageButton
+			android:id="@+id/btnChange"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@android:color/transparent"
+			android:src="@mipmap/change"/>
+
+		<Spinner
+			android:id="@+id/spinner_to"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:textAlignment="center"
+			android:layout_height="match_parent"
+			android:entries="@array/systems"/>
+	</LinearLayout>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="54">
+		<include layout="@layout/keyboard" />
+	</FrameLayout>
+</LinearLayout>
+

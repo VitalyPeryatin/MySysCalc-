@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnD"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="D" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnE"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="E" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnF"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="F" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnA"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="A" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnB"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="B" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnC"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="C" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn7"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn8"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn9"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn4"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn5"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn6"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn1"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn2"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn3"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnFraction"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="," />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btn0"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <com.mycompany.coding2.View.CustomViews.LightButton
+                android:id="@+id/btnEqual"
+                style="@style/SimpleButtons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="16dp"
+        android:orientation="vertical">
+        <com.mycompany.coding2.View.CustomViews.LightButton
+            android:text="DEL"
+            android:id="@+id/btnDelete"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/operand_btn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent" />
+        <com.mycompany.coding2.View.CustomViews.LightButton
+            android:text="/"
+            android:id="@+id/btnDevide"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/operand_btn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"/>
+        <com.mycompany.coding2.View.CustomViews.LightButton
+            android:text="x"
+            android:id="@+id/btnMultiply"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/operand_btn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"/>
+        <com.mycompany.coding2.View.CustomViews.LightButton
+            android:text="-"
+            android:id="@+id/btnMinus"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/operand_btn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"/>
+        <com.mycompany.coding2.View.CustomViews.LightButton
+            android:text="+"
+            android:id="@+id/btnPlus"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/operand_btn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
