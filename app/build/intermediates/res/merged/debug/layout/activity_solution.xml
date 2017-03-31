@@ -3,4 +3,12 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="После того как  мы пофиксим все баги, спустя две недели мы добавим подержку показа решений.
+        Если вы найдете баг пишите в комментарии! "/>
+
 </LinearLayout>
