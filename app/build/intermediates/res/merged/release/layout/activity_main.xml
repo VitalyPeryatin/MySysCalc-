@@ -44,10 +44,10 @@
 		<HorizontalScrollView
 			android:id="@+id/scrollingTo"
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
+			android:layout_height="0dp"
 			android:layout_weight="3"
 			android:scrollbarSize="0dp"
-			android:layout_marginRight="8dp"
+			android:layout_marginEnd="8dp"
 			android:animateLayoutChanges="false">
 			<com.mycompany.coding2.View.CustomViews.ThinTextView
 				android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
 			android:layout_height="wrap_content"
 			android:background="@color/primaryColor"
 			android:textColor="@android:color/white"
-			android:text="Показать решение"
+			android:text="@string/show_solution"
 			android:textSize="12sp"
 			android:gravity="center" />
 		</FrameLayout>

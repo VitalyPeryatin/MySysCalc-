@@ -595,7 +595,6 @@ int id add 0x7f0c001b
 int id alertTitle 0x7f0c0043
 int id all 0x7f0c000e
 int id always 0x7f0c0025
-int id auto_result 0x7f0c0096
 int id basic 0x7f0c000f
 int id beginning 0x7f0c0022
 int id bottom 0x7f0c002a
@@ -687,6 +686,7 @@ int id search_plate 0x7f0c0057
 int id search_src_text 0x7f0c0058
 int id search_voice_btn 0x7f0c005c
 int id select_dialog_listview 0x7f0c005d
+int id send_review 0x7f0c0096
 int id shortcut 0x7f0c0047
 int id showCustom 0x7f0c0017
 int id showHome 0x7f0c0018
@@ -722,6 +722,7 @@ int id useLogo 0x7f0c001a
 int id withText 0x7f0c0029
 int id wrap 0x7f0c000b
 int id wrap_content 0x7f0c0021
+int id write_developer 0x7f0c0097
 int integer abc_config_activityDefaultDur 0x7f0d0000
 int integer abc_config_activityShortDur 0x7f0d0001
 int integer cancel_button_image_alpha 0x7f0d0002
@@ -810,9 +811,14 @@ int string abc_shareactionprovider_share_with 0x7f060010
 int string abc_shareactionprovider_share_with_application 0x7f060011
 int string abc_toolbar_collapse_description 0x7f060012
 int string app_name 0x7f060021
-int string hello_world 0x7f060022
+int string big_number 0x7f060022
+int string hello_world 0x7f060023
 int string search_menu_title 0x7f060013
+int string send_review 0x7f060024
+int string show_solution 0x7f060025
 int string status_bar_notification_info_overflow 0x7f060014
+int string write_developer 0x7f060026
+int string wrong_notation 0x7f060027
 int style AlertDialog_AppCompat 0x7f08009f
 int style AlertDialog_AppCompat_Light 0x7f0800a0
 int style Animation_AppCompat_Dialog 0x7f0800a1

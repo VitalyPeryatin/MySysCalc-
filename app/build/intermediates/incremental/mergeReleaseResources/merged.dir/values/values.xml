@@ -460,9 +460,14 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">NumSysCalc+</string>
+    <string name="big_number">Огромное число!</string>
     <string name="hello_world">Hello world!</string>
     <string name="search_menu_title">Search</string>
+    <string name="send_review">Оставить отзыв</string>
+    <string name="show_solution">Показать решение</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="write_developer">Написать разрабтчику</string>
+    <string name="wrong_notation">Неправ.сис.счисл.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

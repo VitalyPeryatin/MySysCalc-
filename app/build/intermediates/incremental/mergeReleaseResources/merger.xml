@@ -1654,7 +1654,7 @@
         <item>14</item>
         <item>15</item>
         <item>16</item>
-    </string-array><string name="app_name">NumSysCalc+</string></file><file path="C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\res\values\styles.xml" qualifiers=""><style name="Buttons">
+    </string-array><string name="show_solution">Показать решение</string><string name="app_name">NumSysCalc+</string><string name="wrong_notation">Неправ.сис.счисл.</string><string name="send_review">Оставить отзыв</string><string name="write_developer">Написать разрабтчику</string><string name="big_number">Огромное число!</string></file><file path="C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\res\values\styles.xml" qualifiers=""><style name="Buttons">
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_weight">1</item>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="big_number">Огромное число!</string>
+    <string name="send_review">Оставить отзыв</string>
+    <string name="show_solution">Показать решение</string>
+    <string name="write_developer">Написать разработчику</string>
+    <string name="wrong_notation">Неправ.сис.счисл.</string>
+</resources>

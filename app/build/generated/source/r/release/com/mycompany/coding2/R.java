@@ -2318,7 +2318,6 @@ containing a value of this type.
         public static final int alertTitle=0x7f0c0043;
         public static final int all=0x7f0c000e;
         public static final int always=0x7f0c0025;
-        public static final int auto_result=0x7f0c0096;
         public static final int basic=0x7f0c000f;
         public static final int beginning=0x7f0c0022;
         public static final int bottom=0x7f0c002a;
@@ -2410,6 +2409,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f0c0058;
         public static final int search_voice_btn=0x7f0c005c;
         public static final int select_dialog_listview=0x7f0c005d;
+        public static final int send_review=0x7f0c0096;
         public static final int shortcut=0x7f0c0047;
         public static final int showCustom=0x7f0c0017;
         public static final int showHome=0x7f0c0018;
@@ -2445,6 +2445,7 @@ containing a value of this type.
         public static final int withText=0x7f0c0029;
         public static final int wrap=0x7f0c000b;
         public static final int wrap_content=0x7f0c0021;
+        public static final int write_developer=0x7f0c0097;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0d0000;
@@ -2543,9 +2544,14 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
         public static final int app_name=0x7f060021;
-        public static final int hello_world=0x7f060022;
+        public static final int big_number=0x7f060022;
+        public static final int hello_world=0x7f060023;
         public static final int search_menu_title=0x7f060013;
+        public static final int send_review=0x7f060024;
+        public static final int show_solution=0x7f060025;
         public static final int status_bar_notification_info_overflow=0x7f060014;
+        public static final int write_developer=0x7f060026;
+        public static final int wrong_notation=0x7f060027;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08009f;

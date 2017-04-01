@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
         "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png",

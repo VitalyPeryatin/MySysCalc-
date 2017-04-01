@@ -1,4 +1,7 @@
-#Wed Mar 29 20:59:48 MSK 2017
-base.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Sat Apr 01 15:20:37 MSK 2017
+base.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a057616779d50c990659614c542d0513a8d58f0
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2628a933459181711f6b93d720377fd33a068695\\classes.dex
+base.1=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2628a933459181711f6b93d720377fd33a068695
+file.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a057616779d50c990659614c542d0513a8d58f0\\classes.dex

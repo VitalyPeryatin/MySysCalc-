@@ -1,12 +1,15 @@
 package com.mycompany.coding2.View;
 
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.*;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.*;
 import android.view.View.*;
 import android.view.animation.Animation;
@@ -31,14 +34,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 	private Spinner fromNotationSpinner, toNotationSpinner;
 	private HorizontalScrollView scrollingFrom, scrollingTo;
 	private boolean hasComma = false;
-    private Toolbar toolbar;
-    private Controller controller;
+	private Controller controller;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-        controller = new Controller();
+        controller = new Controller(this);
 
         initToolbar();
 		initTextFields();
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 	}
 
     private void initToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
     }
@@ -58,7 +60,27 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
         return true;
     }
 
-    private void initTextFields(){
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		Intent intent = new Intent();
+		switch(item.getItemId()){
+			case R.id.send_review:
+				intent.setAction(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.mycompany.coding2&hl=ru"));
+				break;
+			case R.id.write_developer:
+				intent.setAction(Intent.ACTION_SEND);
+				intent.setType("plain/text");
+				intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"peryatin.vitalik37@gmail.com"});
+				intent.putExtra(Intent.EXTRA_SUBJECT, "Приложение \"Калькулятор Систем Счисления\"");
+				intent.putExtra(Intent.EXTRA_TEXT, "");
+				break;
+		}
+		startActivity(intent);
+		return true;
+	}
+
+	private void initTextFields(){
 		fromNotationTV = (TextView) findViewById(R.id.textFrom);
 		toNotationTV = (TextView) findViewById(R.id.textTo);
 		fromNotationTV.setMovementMethod(new ScrollingMovementMethod());
@@ -85,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 				fromNotation = Integer.parseInt(parent.getItemAtPosition(position).toString());
 				blockButtons(fromNotation);
+                equal();
 			}
 
 			@Override
@@ -100,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 				toNotation = Integer.parseInt(parent.getItemAtPosition(position).toString());
+                equal();
 			}
 
 			@Override
@@ -108,6 +132,31 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			}
 		});
 	}
+
+	/** Проверяет правильность введенных данных */
+	private boolean isValidExpression(int notation){
+        boolean isValid = true;
+        for(char symbol : getText().toCharArray()) {
+            if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/')
+                continue;
+            if (getOneDigit(symbol) >= notation) {
+                isValid = false;
+                break;
+            }
+        }
+        return isValid;
+    }
+
+    /**
+     * Получает число записанное в десятичном виде
+     * @param digit число записанное по правилам систем счисления
+     * @return число записанное в десятичном виде
+     */
+    private int getOneDigit(char digit){
+        if(digit >= 'A' && digit <= 'F') return digit - 55;
+        else if(digit == ',') return -1;
+        return Integer.parseInt(String.valueOf(digit));
+    }
 
 	private void initButtons() {
 		buttons = new Button[]{
@@ -242,6 +291,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			}
 
 		}
+		Log.d("log", "sign: " + isSign);
 
 		scrollingFrom.post(new Runnable() {
 			@Override
@@ -265,21 +315,29 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		}catch (Exception ignored) {
 			hasComma = false;
 		}
-		if (length > 0)
+
+		if (length > 0) {
 			fromNotationTV.setText(getText().substring(0, length - 1));
+			checkSign(length);
+		}
+		else isSign = false;
+
+	}
+
+	private void checkSign(int length){
 		try {
 			char lastChar = getText().charAt(length - 2);
-			if(length == 0 || lastChar == '-' || lastChar == '+' ||
-					lastChar == '*' || lastChar == '/')
-				isSign = true;
+			isSign = lastChar == '-' || lastChar == '+' || lastChar == '*' || lastChar == '/';
 		}
-		catch (Exception e){
-			isSign = true;
-		}
+		catch (Exception ignored){}
 	}
 
 	private void equal() {
-        String answer = controller.getAnswer(getText(), fromNotation, toNotation);
+        String answer;
+        if(isValidExpression(fromNotation))
+            answer = controller.getAnswer(getText(), fromNotation, toNotation, 5);
+        else
+            answer = getResources().getString(R.string.wrong_notation);
         toNotationTV.setText(answer);
 	}
 

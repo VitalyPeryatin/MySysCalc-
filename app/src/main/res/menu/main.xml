@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="Лицензия ПО"
-        android:id="@+id/auto_result" />
+        android:title="@string/send_review"
+        android:id="@+id/send_review" />
+    <item
+        android:title="@string/write_developer"
+        android:id="@+id/write_developer" />
 </menu>

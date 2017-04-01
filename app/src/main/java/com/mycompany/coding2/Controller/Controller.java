@@ -1,9 +1,11 @@
 package com.mycompany.coding2.Controller;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.mycompany.coding2.Model.ConverterNotation;
 import com.mycompany.coding2.Model.DataOfSolution;
+import com.mycompany.coding2.View.MainActivity;
 
 /**
  * Руководит проводит процессами
@@ -11,18 +13,22 @@ import com.mycompany.coding2.Model.DataOfSolution;
  * @version 1.0
  */
 public class Controller {
-    private ConverterNotation converter = new ConverterNotation("0", 10, 2);
-    private boolean hasSolution = false;
-    private DataOfSolution solution = new DataOfSolution();
+    private ConverterNotation converter;
 
-    public String getAnswer(String expression, int fromNotation, int toNotation){
-        converter.setParameters(expression, fromNotation, toNotation);
+    public Controller(Context context){
+        converter = new ConverterNotation(context, "0", 10, 2, 5);
+    }
+
+    public String getAnswer(String expression, int fromNotation, int toNotation, int accuracy){
+        converter.setParameters(expression, fromNotation, toNotation, accuracy);
         try {
             converter.startTransfer();
             return converter.getResult();
-        } catch (Exception e) {
-            Log.e("error", e.toString());
-            return "";
+        } catch (NumberFormatException e) {
+            return converter.getOldResult();
+        }
+        catch (Exception e){
+            return e.getMessage();
         }
     }
 

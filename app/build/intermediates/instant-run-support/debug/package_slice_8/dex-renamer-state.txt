@@ -1,4 +1,4 @@
-#Wed Mar 29 14:31:00 MSK 2017
+#Sat Apr 01 15:20:34 MSK 2017
 base.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 renamed.0=classes.dex
 file.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex

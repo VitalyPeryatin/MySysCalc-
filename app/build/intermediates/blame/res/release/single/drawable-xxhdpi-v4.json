@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
         "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png",

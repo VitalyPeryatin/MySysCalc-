@@ -1,7 +1,9 @@
 package com.mycompany.coding2.Model;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
-import android.util.Log;
+
+import com.mycompany.coding2.R;
 
 /**
  * Переводит числа в различные системы счисления
@@ -10,10 +12,13 @@ import android.util.Log;
  */
 public class ConverterNotation {
 
-	private String expression;
+	private String expression, oldExpression;
 	private int fromNotation, toNotation;
-	private static final int AMOUNT_OF_SYMBOLS_AFTER_COMMA = 5;
+	private int amountOfSymbolsAfterComma;
 	private boolean RESULT_OK = false;
+	private static final int MAX_NUMBER = 2147483647, MIN_NUMBER = -2147483648;
+	private Context context;
+
 
 	/**
 	 * Передает параметры в метод установки параметров
@@ -21,8 +26,10 @@ public class ConverterNotation {
 	 * @param fromNotation то, из какой системы счисления
 	 * @param toNotation то, в какую систему счислению
 	 */
-	public ConverterNotation(String expression, int fromNotation, int toNotation){
-		setParameters(expression, fromNotation, toNotation);
+	public ConverterNotation(Context context, String expression,
+							 int fromNotation, int toNotation, int amountOfSymbolsAfterComma){
+		this.context = context;
+		setParameters(expression, fromNotation, toNotation, amountOfSymbolsAfterComma);
 	}
 
 	/**
@@ -31,19 +38,20 @@ public class ConverterNotation {
 	 * @param fromNotation то, из какой системы счисления
 	 * @param toNotation то, в какую систему счислению
 	 */
-	public void setParameters(String expression, int fromNotation, int toNotation){
+	public void setParameters(String expression,
+							  int fromNotation, int toNotation, int amountOfSymbolsAfterComma){
 		this.expression = expression;
 		this.fromNotation = fromNotation;
 		this.toNotation = toNotation;
+		this.amountOfSymbolsAfterComma = amountOfSymbolsAfterComma;
 		RESULT_OK = false;
 	}
 
 	/** Начинает процесс перевода числа в другую систему счисления */
-	public void startTransfer() throws Exception {
-
+	public void startTransfer() {
 		String tenExpression;
 		if(fromNotation == toNotation && !(expression.contains("+") || expression.contains("-") ||
-				expression.contains("*") || expression.contains("/"))) {
+				expression.contains("*") || expression.contains("/")) || expression.length() == 0) {
 			RESULT_OK = true;
 			return;
 		}
@@ -54,12 +62,24 @@ public class ConverterNotation {
 			tenExpression = getConvertToTenExpression();
 		}
 		try {
-			double result = new MathParser().parse(tenExpression);
-			if(result % 1 == 0)expression = String.valueOf((int)result);
-			else expression = String.valueOf(result);
-			expression = expression.replace(".", ",");
+			tenExpression = tenExpression.replace(',', '.');
+			float result = new MathParser().parse(tenExpression);
+			result = (float) (Math.round(result*100000.0)/100000.0);
+			if (result <= MIN_NUMBER || result >= MAX_NUMBER ) {
+				expression = context.getResources().getString(R.string.big_number);
+				RESULT_OK = true;
+				return;
+			}
+			if(result % 1 == 0)
+				expression = String.valueOf((int)result);
+			else
+				expression = String.valueOf(result);
 		} catch (Exception ignored) {}
 		if(toNotation == 10) {
+			RESULT_OK = true;
+			return;
+		}
+		if(expression.equals("0")){
 			RESULT_OK = true;
 			return;
 		}
@@ -71,16 +91,21 @@ public class ConverterNotation {
 	 * @return результат переведа математического выражения
 	 * @throws Exception вызывается исключение если результат еще не получен
 	 */
-	public String getResult() throws Exception {
-		if(RESULT_OK)return expression;
-		else throw new Exception();
+	public String getResult() {
+		oldExpression = expression;
+		if (RESULT_OK) return expression;
+		else return oldExpression;
+	}
+
+	public String getOldResult(){
+		return oldExpression;
 	}
 
 	/**
 	 * Переводит математическое выражение в десятичную систему счисления
 	 * @return математическое выражение в десятичной системе счисления
 	 */
-	private String getConvertToTenExpression(){
+	private String getConvertToTenExpression() {
 		String tenExpression = "";
 		String notTenExpression = expression;
 		while (notTenExpression.length() > 0){
@@ -88,7 +113,6 @@ public class ConverterNotation {
 			// split[1] - выражение, которое нужно перевести в дестичную систему счисления
 			String[] split = notTenExpression.split("[-+*/]", 2);
 			String sign = getSign(notTenExpression);
-			Log.d("log", split[0]);
 			// Если выражение имеет стандартный вид (12+3)
 			tenExpression += convertToTenNotation(split[0])+sign;
 			// Если конец выражения, то выходим из цикла
@@ -119,7 +143,7 @@ public class ConverterNotation {
 	 * @return число переведенное в десятичную систему счисления
 	 */
 	@NonNull
-	private String convertToTenNotation(String number){
+	private String convertToTenNotation(String number) {
 		if (number.equals(""))return "";
 		int pow = getBeginPow(number);
 		double num = 0;
@@ -149,10 +173,10 @@ public class ConverterNotation {
 	 * @param digit число в десятичном виде
 	 * @return число, записанное по правилам систем счисления
 	 */
-	private String setOneDigit(int digit){
-		if(digit >= 10 && digit <= 15)
-			return String.valueOf((char)(digit+55));
-		return String.valueOf(digit);
+    private String setOneDigit(int digit){
+        if (digit >= 10 && digit <= 15)
+            return String.valueOf((char) (digit + 55));
+        return String.valueOf(digit);
 	}
 
 	/**
@@ -173,7 +197,13 @@ public class ConverterNotation {
 	}
 
 	/** Переводит число в нужную систему счисления */
-	private void convertToCustomNotation() throws Exception {
+	private void convertToCustomNotation() {
+		expression = expression.replace('.', ',') ;
+		boolean isNegative = false;
+		if(expression.contains("-")){
+			expression = expression.substring(1);
+			isNegative = true;
+		}
 		if(expression.contains(",")){
 			String[] splitNum = getSplitNumByComma();
 			String intPart = customNotationOfInteger(Integer.parseInt(splitNum[0]));
@@ -181,7 +211,16 @@ public class ConverterNotation {
 			expression = intPart.concat(",").concat(fracPart);
 		}
 		else
-			expression = customNotationOfInteger(Integer.parseInt(expression));
+			try {
+				expression = customNotationOfInteger(Integer.parseInt(expression));
+			}catch (Exception e){
+				if(!(expression.contains("+") || expression.contains("*") ||
+						expression.contains("/") || expression.contains("-")))
+					expression = context.getResources().getString(R.string.big_number);
+				else
+					expression = oldExpression;
+			}
+		if(isNegative) expression = ("-").concat(expression);
 		RESULT_OK = true;
 	}
 
@@ -189,7 +228,7 @@ public class ConverterNotation {
 	 * Разделяет число на целую и дробную часть
 	 * @return целую и дробную часть
 	 */
-	private String[] getSplitNumByComma() throws Exception {
+	private String[] getSplitNumByComma() {
 		String[] splitNumByComma = expression.split(",", 2);
 		for(int i = 0; i < splitNumByComma.length; i++)
 			if(splitNumByComma[i].equals("")) splitNumByComma[i] = "0";
@@ -207,7 +246,7 @@ public class ConverterNotation {
 		// Цикл осуществляет основную работу по переводу целой части
 		// десятичного чсла в нужную систему счисления
 		while(integerPart != 0){
-			modulo = String.valueOf((integerPart % toNotation)) + modulo;
+			modulo = setOneDigit((integerPart % toNotation)) + modulo;
 			integerPart /= toNotation;
 		}
 		return modulo;
@@ -226,7 +265,7 @@ public class ConverterNotation {
 
 		// Цикл осуществляет основную работу по переводу дробной части
 		// десятичного чсла в нужную систему счисления
-		for(int i = 0; i < AMOUNT_OF_SYMBOLS_AFTER_COMMA; i++){
+		for(int i = 0; i < amountOfSymbolsAfterComma; i++){
 			integerPart *= toNotation;
 			modulo += setOneDigit(integerPart / maxLength);
 			integerPart %= maxLength;

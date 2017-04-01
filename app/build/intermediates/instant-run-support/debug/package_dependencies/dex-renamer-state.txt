@@ -1,4 +1,4 @@
-#Sun Mar 26 12:34:48 MSK 2017
+#Sat Apr 01 15:20:22 MSK 2017
 file.2=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_fdc1ed35722fb77d3417b751072c546ab1994af5\\classes.dex
 base.2=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_fdc1ed35722fb77d3417b751072c546ab1994af5
 file.1=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.2.0_e00f2f4ce11361f9c7a94f209dbe7a460bd2608f\\classes.dex
