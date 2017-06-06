@@ -5,4 +5,22 @@
     <string name="show_solution">Показать решение</string>
     <string name="write_developer">Написать разработчику</string>
     <string name="wrong_notation">Неправ.сис.счисл.</string>
+    <string name="animate_permission">Разрешить анимацию</string>
+    <string-array name="systems">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
 </resources>

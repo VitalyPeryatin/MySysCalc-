@@ -2,7 +2,8 @@
 <resources>
     <color name="numberBtn">#434343</color>
     <color name="operandBtn">#636363</color>
-    <color name="blockedBtn">#505050</color>
+    <color name="blockedBtnBackground">#505050</color>
+    <color name="blockedBtnText">#BBB</color>
     <color name="accentColor">#00bcd4</color>
     <color name="primaryColor">#00bfa5</color>
     <color name="rippleColor">#6fff</color>

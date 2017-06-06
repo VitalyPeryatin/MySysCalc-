@@ -7,11 +7,32 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 114,
-                    "endOffset": 165
+                    "endLine": 18,
+                    "endColumn": 19,
+                    "endOffset": 456
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 425,
+                        "endLine": 24,
+                        "endColumn": 19,
+                        "endOffset": 842
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 461,
+                    "endColumn": 114,
+                    "endOffset": 571
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -23,14 +44,14 @@
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 170,
+                    "startOffset": 576,
                     "endColumn": 107,
-                    "endOffset": 273
+                    "endOffset": 679
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -42,14 +63,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 278,
+                    "startOffset": 684,
                     "endColumn": 122,
-                    "endOffset": 396
+                    "endOffset": 802
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -61,14 +82,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 401,
+                    "startOffset": 807,
                     "endColumn": 101,
-                    "endOffset": 498
+                    "endOffset": 904
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -80,14 +101,14 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 503,
+                    "startOffset": 909,
                     "endColumn": 111,
-                    "endOffset": 610
+                    "endOffset": 1016
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -99,14 +120,14 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 615,
+                    "startOffset": 1021,
                     "endColumn": 85,
-                    "endOffset": 696
+                    "endOffset": 1102
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -118,14 +139,14 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 701,
+                    "startOffset": 1107,
                     "endColumn": 104,
-                    "endOffset": 801
+                    "endOffset": 1207
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -137,14 +158,14 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 806,
+                    "startOffset": 1212,
                     "endColumn": 119,
-                    "endOffset": 921
+                    "endOffset": 1327
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -156,14 +177,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 926,
+                    "startOffset": 1332,
                     "endColumn": 78,
-                    "endOffset": 1000
+                    "endOffset": 1406
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -175,14 +196,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1005,
+                    "startOffset": 1411,
                     "endColumn": 77,
-                    "endOffset": 1078
+                    "endOffset": 1484
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -194,14 +215,14 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1083,
+                    "startOffset": 1489,
                     "endColumn": 79,
-                    "endOffset": 1158
+                    "endOffset": 1564
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -213,14 +234,14 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1163,
+                    "startOffset": 1569,
                     "endColumn": 105,
-                    "endOffset": 1264
+                    "endOffset": 1670
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -232,14 +253,14 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1269,
+                    "startOffset": 1675,
                     "endColumn": 107,
-                    "endOffset": 1372
+                    "endOffset": 1778
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -251,14 +272,14 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1377,
+                    "startOffset": 1783,
                     "endColumn": 97,
-                    "endOffset": 1470
+                    "endOffset": 1876
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -270,14 +291,14 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1475,
+                    "startOffset": 1881,
                     "endColumn": 108,
-                    "endOffset": 1579
+                    "endOffset": 1985
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -289,14 +310,14 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1584,
+                    "startOffset": 1990,
                     "endColumn": 105,
-                    "endOffset": 1685
+                    "endOffset": 2091
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -308,14 +329,14 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1690,
+                    "startOffset": 2096,
                     "endColumn": 107,
-                    "endOffset": 1793
+                    "endOffset": 2199
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -327,14 +348,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1798,
+                    "startOffset": 2204,
                     "endColumn": 135,
-                    "endOffset": 1929
+                    "endOffset": 2335
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -346,14 +367,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1934,
+                    "startOffset": 2340,
                     "endColumn": 99,
-                    "endOffset": 2029
+                    "endOffset": 2435
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -365,14 +386,52 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2034,
-                    "endColumn": 80,
-                    "endOffset": 2110
+                    "startOffset": 2440,
+                    "endColumn": 65,
+                    "endOffset": 2501
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 358,
+                        "endColumn": 65,
+                        "endOffset": 419
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2506,
+                    "endColumn": 54,
+                    "endOffset": 2556
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 54,
+                        "endOffset": 107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2561,
+                    "endColumn": 80,
+                    "endOffset": 2637
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -384,20 +443,96 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2115,
-                    "endColumn": 100,
-                    "endOffset": 2211
+                    "startOffset": 2642,
+                    "endColumn": 54,
+                    "endOffset": 2692
                 },
                 "from": {
-                    "file": "C:\\Users\\Alex\\.android\\build-cache\\bc3d51cefd6dc98231a6943632606afbb2214d3f\\output\\res\\values-ru\\values-ru.xml",
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 54,
+                        "endOffset": 163
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2697,
+                    "endColumn": 58,
+                    "endOffset": 2751
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 169,
+                        "endColumn": 58,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2756,
+                    "endColumn": 100,
+                    "endOffset": 2852
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\.android\\build-cache\\e89962f739333e2b48305fc830c4a4f74920ed9c\\output\\res\\values-ru\\values-ru.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
                         "startOffset": 2115,
                         "endColumn": 100,
                         "endOffset": 2211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2857,
+                    "endColumn": 65,
+                    "endOffset": 2918
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 65,
+                        "endOffset": 290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2923,
+                    "endColumn": 60,
+                    "endOffset": 2979
+                },
+                "from": {
+                    "file": "C:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\src\\main\\res\\values-ru\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 296,
+                        "endColumn": 60,
+                        "endOffset": 352
                     }
                 }
             }

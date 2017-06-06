@@ -7,6 +7,7 @@
     <string name="big_number">Huge number</string>
     <string name="send_review">Give feedback</string>
     <string name="write_developer">Write to developer</string>
+    <string name="animate_permission">Animate permission</string>
     <string-array name="systems">
         <item>2</item>
         <item>3</item>

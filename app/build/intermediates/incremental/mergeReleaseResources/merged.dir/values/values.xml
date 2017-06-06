@@ -126,7 +126,8 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <color name="blockedBtn">#505050</color>
+    <color name="blockedBtnBackground">#505050</color>
+    <color name="blockedBtnText">#BBB</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -459,15 +460,15 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">NumSysCalc+</string>
-    <string name="big_number">Огромное число!</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="animate_permission">Animate permission</string>
+    <string name="app_name" translatable="false">NumSysCalc+</string>
+    <string name="big_number">Huge number</string>
     <string name="search_menu_title">Search</string>
-    <string name="send_review">Оставить отзыв</string>
-    <string name="show_solution">Показать решение</string>
+    <string name="send_review">Give feedback</string>
+    <string name="show_solution">Show solution</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="write_developer">Написать разрабтчику</string>
-    <string name="wrong_notation">Неправ.сис.счисл.</string>
+    <string name="write_developer">Write to developer</string>
+    <string name="wrong_notation">Bad number sys.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

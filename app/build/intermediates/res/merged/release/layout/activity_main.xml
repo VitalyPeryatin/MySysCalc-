@@ -1,67 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
 	android:background="#FFFFFF"
 	android:weightSum="100">
-	<LinearLayout
+
+	<android.support.constraint.ConstraintLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="31"
-		android:orientation="vertical"
 		android:background="@android:color/white"
-		android:elevation="8dp">
-		<android.support.v7.widget.Toolbar
-			android:id="@+id/toolbar"
-			android:layout_width="match_parent"
-			android:layout_height="?android:attr/actionBarSize"
-			android:title=""
-			android:background="@android:color/white" />
+		android:elevation="8dp"
+		android:orientation="vertical">
 
-		<HorizontalScrollView
-			android:id="@+id/scrollingFrom"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:scrollbarSize="0dp"
-			android:layout_marginRight="8dp"
-			android:animateLayoutChanges="false">
-
-			<com.mycompany.coding2.View.CustomViews.ThinTextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:id="@+id/textFrom"
-				android:paddingRight="8dp"
-				android:background="#FFFFFF"
-				android:layout_gravity="end"
-				android:textStyle="bold"
-				android:textColor="#636363"
-				android:textSize="50sp"/>
-
-		</HorizontalScrollView>
-
-		<HorizontalScrollView
-			android:id="@+id/scrollingTo"
-			android:layout_width="match_parent"
+		<LinearLayout
+			android:id="@+id/linearLayout"
+			android:layout_width="0dp"
 			android:layout_height="0dp"
-			android:layout_weight="3"
-			android:scrollbarSize="0dp"
-			android:layout_marginEnd="8dp"
-			android:animateLayoutChanges="false">
-			<com.mycompany.coding2.View.CustomViews.ThinTextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:id="@+id/textTo"
-				android:paddingRight="8dp"
-				android:background="#FFFFFF"
-				android:layout_gravity="end"
-				android:textColor="#696969"
-				android:textSize="35sp" />
-		</HorizontalScrollView>
-	</LinearLayout>
+			android:background="@android:color/white"
+			android:elevation="6dp"
+			android:orientation="vertical"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
 
-	<FrameLayout
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?android:attr/actionBarSize"
+				android:background="@android:color/transparent"
+				android:title="" />
+
+			<HorizontalScrollView
+				android:id="@+id/scrollingFrom"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:animateLayoutChanges="false"
+				android:background="@android:color/transparent"
+				android:scrollbarSize="0dp">
+
+				<com.mycompany.coding2.view.CustomViews.ThinTextView
+					android:id="@+id/textFrom"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:background="@android:color/transparent"
+					android:paddingRight="8dp"
+					android:textColor="#636363"
+					android:textSize="50sp"
+					android:textStyle="bold" />
+
+			</HorizontalScrollView>
+
+			<HorizontalScrollView
+				android:id="@+id/scrollingTo"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:animateLayoutChanges="false"
+				android:background="@android:color/transparent"
+				android:scrollbarSize="0dp"
+				tools:layout_editor_absoluteX="8dp"
+				tools:layout_editor_absoluteY="159dp">
+
+				<com.mycompany.coding2.view.CustomViews.ThinTextView
+					android:id="@+id/textTo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:background="@android:color/transparent"
+					android:paddingRight="8dp"
+					android:textColor="#696969"
+					android:textSize="35sp" />
+			</HorizontalScrollView>
+
+		</LinearLayout>
+
+		<FrameLayout
+			android:id="@+id/output_layout"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:elevation="8dp"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+
+		</FrameLayout>
+
+	</android.support.constraint.ConstraintLayout>
+
+
+
+	<!--<FrameLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="8"
@@ -78,12 +118,12 @@
 			android:text="@string/show_solution"
 			android:textSize="12sp"
 			android:gravity="center" />
-		</FrameLayout>
+		</FrameLayout>-->
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
-		android:layout_weight="7"
+		android:layout_weight="8"
 		android:gravity="center"
 		android:background="@color/primaryColor"
 		android:orientation="horizontal"
@@ -92,6 +132,7 @@
 			android:id="@+id/spinner_from"
 			android:layout_width="0dp"
 			android:layout_weight="1"
+
 			android:background="@android:color/transparent"
 			android:layout_height="match_parent"
 			android:entries="@array/systems"/>
@@ -115,7 +156,7 @@
 	<FrameLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
-		android:layout_weight="54">
+		android:layout_weight="61">
 		<include layout="@layout/keyboard" />
 	</FrameLayout>
 </LinearLayout>

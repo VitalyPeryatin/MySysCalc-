@@ -1,4 +1,4 @@
-#Sat Apr 01 15:20:37 MSK 2017
+#Fri Jun 02 22:43:59 MSK 2017
 base.0=C\:\\Users\\Alex\\AndroidStudioProjects\\NumSysCalc\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a057616779d50c990659614c542d0513a8d58f0
 renamed.1=classes2.dex
 renamed.0=classes.dex

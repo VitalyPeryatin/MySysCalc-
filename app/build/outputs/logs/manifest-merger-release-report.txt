@@ -15,15 +15,15 @@ ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidMa
 		INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:5:5-21:19
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Alex\.android\build-cache\bc3d51cefd6dc98231a6943632606afbb2214d3f\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.android\build-cache\26c86617b585d7012b04860fc11fe87a01125f6d\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.android\build-cache\c1e61a95954737f024bcde484d9821265fae8674\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.android\build-cache\f3485228b82c8ca93fada8ce0110f600e0f008e8\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.android\build-cache\65e284a5834a6213fa3301c358a3926aed1dd18e\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.android\build-cache\510aa7e222e7479ae7ba9feca162399cd641628e\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Alex\.android\build-cache\20d0c819bf45fdea138cdf3c83cba4577689865f\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Alex\.android\build-cache\6262f837283f471d4e60ca12135896bca6710698\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.android\build-cache\2a6bdb980058f7caa3549603599cebb1acc3abff\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Alex\.android\build-cache\d08b04bc5890fb1f23ba9c265704ef903fe8905f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Alex\.android\build-cache\d9e8b5bb48d4e169fbc9361d3ef9fa2b5b1ee3a4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Alex\.android\build-cache\b04923198502521ef3d07ad8563db1a95356ad26\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Alex\.android\build-cache\52915e3d1fad5994369111db390e1755c4ff8e69\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Alex\.android\build-cache\3b5e4e281aa51a15c52d96cb8e05fdf8e3f2c6fd\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\3aaa58ab563c29ed3c06653f40c40c25610d2761\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\6e1f94a6069873e2877963dc1b1c77c8eab26d3e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Alex\.android\build-cache\16ff2c4fd91673465dbdcc4432a9e507d8f15693\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.1] C:\Users\Alex\.android\build-cache\94778609aa08bc43aa4876c6de991e8c65a7cce0\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:8:9-41
@@ -33,7 +33,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.1] C:\Users\Al
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:7:9-39
 	android:theme
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:9:9-40
-activity#com.mycompany.coding2.View.MainActivity
+activity#com.mycompany.coding2.view.MainActivity
 ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:10:9-19:20
 	android:screenOrientation
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:13:13-49
@@ -51,27 +51,41 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:17:27-74
-activity#com.mycompany.coding2.View.SolutionActivity
+activity#com.mycompany.coding2.view.SolutionActivity
 ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:20:9-68
 	android:name
 		ADDED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml:20:19-56
 uses-sdk
 INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Alex\.android\build-cache\bc3d51cefd6dc98231a6943632606afbb2214d3f\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.android\build-cache\26c86617b585d7012b04860fc11fe87a01125f6d\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.android\build-cache\c1e61a95954737f024bcde484d9821265fae8674\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.android\build-cache\f3485228b82c8ca93fada8ce0110f600e0f008e8\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.android\build-cache\65e284a5834a6213fa3301c358a3926aed1dd18e\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.android\build-cache\510aa7e222e7479ae7ba9feca162399cd641628e\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Alex\.android\build-cache\20d0c819bf45fdea138cdf3c83cba4577689865f\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Alex\.android\build-cache\6262f837283f471d4e60ca12135896bca6710698\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.android\build-cache\2a6bdb980058f7caa3549603599cebb1acc3abff\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Alex\.android\build-cache\d08b04bc5890fb1f23ba9c265704ef903fe8905f\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Alex\.android\build-cache\d9e8b5bb48d4e169fbc9361d3ef9fa2b5b1ee3a4\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Alex\.android\build-cache\b04923198502521ef3d07ad8563db1a95356ad26\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Alex\.android\build-cache\52915e3d1fad5994369111db390e1755c4ff8e69\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Alex\.android\build-cache\3b5e4e281aa51a15c52d96cb8e05fdf8e3f2c6fd\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\3aaa58ab563c29ed3c06653f40c40c25610d2761\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\6e1f94a6069873e2877963dc1b1c77c8eab26d3e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Alex\.android\build-cache\16ff2c4fd91673465dbdcc4432a9e507d8f15693\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support.constraint:constraint-layout:1.0.1] C:\Users\Alex\.android\build-cache\94778609aa08bc43aa4876c6de991e8c65a7cce0\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Alex\.android\build-cache\bc3d51cefd6dc98231a6943632606afbb2214d3f\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Alex\AndroidStudioProjects\NumSysCalc\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Alex\.android\build-cache\d08b04bc5890fb1f23ba9c265704ef903fe8905f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Alex\.android\build-cache\d9e8b5bb48d4e169fbc9361d3ef9fa2b5b1ee3a4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Alex\.android\build-cache\b04923198502521ef3d07ad8563db1a95356ad26\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Alex\.android\build-cache\52915e3d1fad5994369111db390e1755c4ff8e69\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Alex\.android\build-cache\3b5e4e281aa51a15c52d96cb8e05fdf8e3f2c6fd\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\3aaa58ab563c29ed3c06653f40c40c25610d2761\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Alex\.android\build-cache\6e1f94a6069873e2877963dc1b1c77c8eab26d3e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Alex\.android\build-cache\16ff2c4fd91673465dbdcc4432a9e507d8f15693\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Alex\.android\build-cache\e89962f739333e2b48305fc830c4a4f74920ed9c\output\AndroidManifest.xml:26:9-47
